@@ -1,0 +1,40 @@
+<div id="Signup">
+    <header>
+        <h1>LogIn</h1>
+    </header>
+<form (ngSubmit)="submitClick()">
+    <table>
+        <tr>
+            <td>
+                <label>Email</label>
+            </td>
+            <td>
+                <input [(ngModel)]="data.email" type="email" id="email" name="email" autocomplete="email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Password</label>
+            </td>
+            <td>
+                <input [(ngModel)]="data.pass" type="password" id="password" name="pass" autocomplete="password" required>
+            </td>
+        </tr>
+    </table>
+
+    <span id="sub">
+            <!-- <a routerLink="/home"> -->
+        <input type="submit">
+        <!-- </a> -->
+    </span>
+
+    <span id="subrest">
+        <input type="reset">
+    </span>
+    <span id="sub">
+            <a routerLink="/register">
+                <input type="submit" value="SignUp">
+            </a>
+        </span>
+    </form>
+</div>

@@ -1,0 +1,113 @@
+
+    
+    <div id="Signup">
+        <header>
+            <h1>SignUp</h1>
+        </header>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>FirstName</label>
+                    </td>
+                    <td>
+                        <input type="text" id="FirstName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>LastName</label>
+                    </td>
+                    <td>
+                        <input type="text" id="LastName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>DoB</label>
+                    </td>
+                    <td>
+                        <input type="date" id="DoB">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender</label>
+                    </td>
+                    <td>
+                        <input id="Male" type="radio" name="Gender" value="Male">Male
+                        <br/>
+                        <input id="Female" type="radio" name="Gender" value="Female">Female</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Mobile</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="Mobile">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Confrim Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="ConfrimPassword" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Address</label>
+                    </td>
+                    <td>
+                        <textarea type="text" row=1 cols="21" id="Address"></textarea> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Pincode</label>
+                    </td>
+                    <td>
+                        <input type="number" id="Pincode">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Language Known</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="tam" value="Tamil">Tamil
+                        <br/>
+                        <input type="checkbox" id="eng" value="English">English
+                        <br/>
+                        <input type="checkbox" id="fre" value="French">French
+                        <br/>
+                        <input type="checkbox" id="hin" value="Hindi">Hindi</td>
+                </tr>
+            </table>
+        
+        <span id="sub">
+                <a routerLink="/login"><input type="submit" name="submit" onclick="submitClick()" onclick="gend()"></a>
+            
+        </span>
+        <span id="subrest">
+            <input type="reset" name="reset">
+        </span>
+    </form>
+    </div>
+   

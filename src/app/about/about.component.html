@@ -1,0 +1,73 @@
+<!-- <div id="abimage"> -->
+<!-- <img id="abcone" src="cone.jpg"> -->
+<div id="ababs">
+  <label id="ablbl">About Us</label>
+</div>
+<!-- </div> -->
+<h3 id='abbrand'>BRAND NEW ICE-CREAMs TO BLOW YOUR MIND</h3>
+<label id="abheadlbl">We’ve baked every item from the core of our heart to serve you</label>
+<br>
+<br>
+<label id="abtxtlbl" style="color:darkkhaki; ">We are here to listen from you deliver exellence by any means</label>
+<br>
+<br>
+<div id="abpara">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore
+    et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
+    or incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem
+    ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim. Ut enim ad minim.
+  </p>
+</div>
+<!-- <div id="absideimg">
+    <img id=abimges src="wooden.jpg">
+</div> -->
+<!-- <div>
+  <ul>
+    <li *ngFor="let list of lists">
+      ID:{{list.id}}Name:{{list.name}}<br>Contact:{{list.contact}}
+    </li>
+  </ul>
+</div> -->
+<div *ngIf="select" style="color: brown">
+    <table>
+      <tr>
+        <td>NAME </td>
+        <td>
+          <input [(ngModel)]="select.name">
+        </td>
+      </tr>
+      <tr>
+        <td>CONTACT </td>
+        <td>
+          <input [(ngModel)]="select.contact">
+        </td>
+      </tr>
+      <tr>
+        <td>EMAIL </td>
+        <td>
+          <input [(ngModel)]="select.email">
+        </td>
+      </tr>
+    </table>
+  </div>
+<div *ngFor="let list of lists" id="tblist" (click)="selectedList(list)">
+  <table border="1">
+    <tr>
+      <td style="color: brown">ID </td>
+      <td>{{list.id}}</td>
+      <td style="color: brown">Name</td>
+      <td>{{list.name | uppercase}}</td>
+    </tr>
+    <tr>
+      <td style="color: brown">Mobile</td>
+      <td>{{list.contact}}</td>
+      <td style="color: brown">Email</td>
+      <td>{{list.email}}</td>
+    </tr>
+  </table>
+</div>

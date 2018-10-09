@@ -1,0 +1,36 @@
+nav{
+    border: 1px solid black;
+    font-family: Gabriola;
+    background-color: rgb(134, 84, 9);
+    color: blanchedalmond;
+    opacity: 0.8; 
+    
+    width: 100%;
+}
+#logo{
+    display: inline-block;
+   vertical-align: bottom;
+   width: 50px;  
+}
+#logo img{
+    height: 49px;
+    width: 79px;  
+    vertical-align: bottom;
+    margin: 2px;
+}
+#navList {
+    display: inline-block;
+    height: 10px;
+}
+li{
+    display: inline-block;
+    padding-left: 162px;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 3px 2px rgb(97, 57, 5);
+}
+a li{
+    color: blanchedalmond;
+    text-decoration: none;
+    text-shadow: 3px 2px rgb(97, 57, 5);
+}

@@ -1,0 +1,51 @@
+
+<div id='main' *ngFor="let empls of empl">
+    <div id="left">
+        <img [src]='empls.photoPath' width="200em" height="100px">
+        
+        <h1>{{empls.name}}</h1>
+
+    </div>
+    <div id="right">
+        <table>
+            <tr>
+                <td>
+                    <label><strong> Identy No </strong></label>
+                </td>
+                <td>{{empls.id}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Name</strong></label>
+                </td>
+                <td>{{empls.name}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Email ID</strong> </label>
+                </td>
+                <td>{{empls.email}}</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label><strong>Address</strong> </label>
+                </td>
+                <td>{{empls.address}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Contact No</strong></label>
+                </td>
+                <td>{{empls.contact}}</td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Location</strong></label>
+                </td>
+                <td>{{empls.location}}</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
